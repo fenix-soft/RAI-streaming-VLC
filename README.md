@@ -1,6 +1,6 @@
 # RAI Streaming VLC
 
-Script per vedere gli stream RAI senza Flash.
+Script per vedere gli stream delle dirette RAI usando VLC (non serve Flash).
 
 ## Utilizzo
 
