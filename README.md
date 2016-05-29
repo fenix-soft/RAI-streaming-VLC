@@ -1,19 +1,22 @@
-= RAI Streaming VLC =
+# RAI Streaming VLC
 
 Script per vedere gli stream RAI senza Flash.
 
-== Utilizzo ==
+## Utilizzo
 
-UTILIZZO: python diretta.py
+`python diretta.py`
 
-== Dipendenze ==
+## Dipendenze
 
-Richiede python-requests e vlc sul sistema.
-Scritto per Linux, ma con una minima modifica dovrebbe funzionare anche su Windows.
+* `python-requests`
+* `vlc` nel PATH
 
-== Credits ==
+(Scritto per Linux, ma con una minima modifica al percorso di vlc dovrebbe funzionare anche su Windows.)
 
-Author: Paolo MONTESEL
-Copyright: 2016
-License: MIT
+## Credits
 
+**Author:** Paolo MONTESEL
+
+**Copyright:** 2016
+
+**License:** MIT
