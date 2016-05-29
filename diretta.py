@@ -12,6 +12,11 @@ License: MIT
 UTILIZZO: python diretta.py
 """
 
+from __future__ import print_function
+try:
+    input = raw_input
+except NameError:
+    pass
 import json
 import os
 import requests
@@ -30,10 +35,10 @@ def json_get(url):
 
 def menu(options):
     for i, option in enumerate(options):
-        print "[{}] - {:s}".format(i + 1, option)
-    print ""
+        print("[{}] - {:s}".format(i + 1, option))
+    print()
     
-    return int(raw_input("> ")) - 1
+    return int(input("> ")) - 1
 
 
 def play(url):
@@ -41,7 +46,7 @@ def play(url):
 
 
 if __name__ == "__main__":
-    print "=== RAI STREAMING ==="
+    print("=== RAI STREAMING ===")
     channels = json_get(CONFIG_URL)["Channels"]
     canale = menu([c["name"] for c in channels])
     
